@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamentos</title>
+</head>
+<body>
+    <h2> Departamentos </h2>
+
+<ul class="departamentos">
+  <!-- Loop through departaments -->
+  <% for(var i = 0; i < departaments.length; i++) {%>
+    <li class="departamento">
+      <!-- Output code from the iterated departament object -->
+      <span><%= departaments[i].DEPTCODE %></span>:
+      <!-- Output name from the iterated departament object -->
+      <span><%= departaments[i].DEPTNAME %></span>
+    </li>
+  <% } %>
+</ul>
+</body>
+</html>
