@@ -7,7 +7,12 @@
 </head>
 <body>
     <h2> Departamentos </h2>
-
+    <form action="/departaments" method="POST">
+      <input type="text" placeholder="Código" name="codeDept">
+      <input type="text" placeholder="Nombre" name="nameDept">
+      <button type="submit">Guardar</button>
+    </form>
+    <hr/>
 <ul class="departamentos">
   <!-- Loop through departaments -->
   <% for(var i = 0; i < departaments.length; i++) {%>
